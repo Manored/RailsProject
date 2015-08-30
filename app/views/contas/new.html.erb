@@ -1,0 +1,15 @@
+<%= form_for :conta, url: contas_path do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :nome %>
+  </p>
+ 
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :senha %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
