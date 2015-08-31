@@ -10,6 +10,10 @@ class PessoasController < ApplicationController
       redirect_to @pessoa
     end
     
+  def show
+      @pessoa = Pessoa.find(params[:id])
+    end
+    
   private
     def pessoa_params
       params.require(:pessoa).permit(:title, :title, :title, :title, :title, :title, :title)

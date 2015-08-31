@@ -10,6 +10,10 @@ class ContasController < ApplicationController
       redirect_to @conta
     end
     
+  def show
+      @conta = Conta.find(params[:id])
+    end
+    
   private
     def conta_params
       params.require(:conta).permit(:title, :title)
